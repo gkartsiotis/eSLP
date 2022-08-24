@@ -1,9 +1,11 @@
 # eSLP
 
 A. Description
+
 The m-files in this repository implement the eSLP algorithm. Currently we have uploaded the files and wrote documentation for the "core" issues; requirements, and how to regarding the setup and running the provided example, which includes a moving obstacle and terrain that changes through time. This is the first phase and will be succeeded by modifying the m-files because currently they are tailor-made to specific experiments and require that they along with compiler related files are installed in predetermined locations. These modification will be applied to other two setups we have used so far that include moving deforming obstacles and a bridge crane system, and will then be upload on this repository also. 
 
 B. Requirements
+
 To run the m-files you will need:
 1. Matlab (We used version 2019b)
 2. Falcon.m found here https://www.fsd.lrg.tum.de/software/falcon-m/ (We used v1.24.2002191427)
