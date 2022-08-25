@@ -19,7 +19,7 @@ Donwload any zip file, uncompress, and run FinalResults.m. First, we display the
 a) Variable TotalResults includes time, states, control, etc.
 
 b) Variable SolverStats includes the results from IPOPT for each subproblem solved by each agent. The [x,y,z] elements correspond to: 
-- In x we store whether the subproblem was solved successfully, in which case IPOPT returns 0, or not, where IPOPT returns 0. In our results all subproblems have been solved successfully, and to easen verification a check is conducted automatically when FinalResults.m is run. 
+- In x we store whether the subproblem was solved successfully, in which case IPOPT returns 0, or not, where IPOPT returns 0. In our results all subproblems have been solved successfully, and to easen verification a check is conducted when FinalResults.m is run. 
 - y is the number of iterations required to solve the subproblem.
 - z is the time required to solve the subproblem. 
 
