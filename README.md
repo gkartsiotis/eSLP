@@ -9,7 +9,6 @@ B. Requirements
 1. Matlab (We used version 2019b)
 2. Falcon.m found here https://www.fsd.lrg.tum.de/software/falcon-m/ (We used v1.24.2002191427)
 3. TDM-GCC compiler (We used TDM-GCC Compiler Suite for Windows GCC 5 Series / GDB 7.9 Series and installed the MinGW-w64 64/32-bit Edition)
-4. There are two additional files needed for the compiler to run smoothly (This process may have changed for versions after 2019b); both are included in the repository. The first is configuremingw.p information for which can be found here https://www.mathworks.com/matlabcentral/answers/313298-i-already-have-mingw-on-my-computer-how-do-i-configure-it-to-work-with-matlab. The second is compile.m needed to set the environment variable properly. Also, depending on the subproblem solved files from here https://www.mathworks.com/matlabcentral/fileexchange/9542-minimum-volume-enclosing-ellipsoid may be used. They are included in every folder.
 
 C. How-to
 
@@ -27,6 +26,7 @@ Setup A involves one moving obstacle and time-changing terrain (expanding puddle
 C.2. How-To : Setup required software
 1. Request a copy of Falcon.m using the link in B2. The support (on all issues) is great and one will be send soon. 
 2. Open matlab and run the setup required by Falcon.m; the process is thoroughly explained in the accompanying manual UserGuideMain.pdf (Chapter 2) that is included in the zip file. Falcon.m will automatically download many of the packages needed, e.g., IPOPT solver. We installed Falcon on folder C:\FALCON.m.v1.24.2002191427\falcon.
+3. There are two additional files needed for the compiler to run smoothly (This process may have changed for versions after 2019b); both are included in the repository. The first is configuremingw.p information for which can be found here https://www.mathworks.com/matlabcentral/answers/313298-i-already-have-mingw-on-my-computer-how-do-i-configure-it-to-work-with-matlab. The second is compile.m needed to set the environment variable properly. Also, depending on the subproblem solved files from here https://www.mathworks.com/matlabcentral/fileexchange/9542-minimum-volume-enclosing-ellipsoid may be used. They are included in every folder.
 
 C.3. How-To : Run provided examples (requires C.2.)
 1. Browse to the folder where Falcon was installed, and unzip the files there. Each experiment should be placed in a different subfolder of the main Falcon folder (the one where you installed Falcon). For example, we placed the folder SetupA of this repository in C:\FALCON.m.v1.24.2002191427\falcon\SetupA.
