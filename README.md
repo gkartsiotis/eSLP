@@ -6,7 +6,7 @@ The m-files in this repository implement the eSLP algorithm. The documentation t
 
 B. Requirements
 
-1. Matlab (We used version 2019b)
+1. Matlab (We used version 2017b)
 2. Falcon.m found here https://www.fsd.lrg.tum.de/software/falcon-m/ (We used v1.24.2002191427)
 3. TDM-GCC compiler (We used TDM-GCC Compiler Suite for Windows GCC 5 Series / GDB 7.9 Series and installed the MinGW-w64 64/32-bit Edition)
 
@@ -23,7 +23,7 @@ b) Variable SolverStats includes the results from IPOPT for each subproblem solv
 - y is the number of iterations required to solve the subproblem.
 - z is the time required to solve the subproblem. 
 
-Setup A involves one moving obstacle and time-changing terrain (expanding puddle). TwoObstacles involves two deforming obstacles moving on meander shaped rivers. Setup C involves a bridge crane system. 
+NSetup A involves one moving obstacle and time-changing terrain (expanding puddle). TwoObstacles involves two deforming obstacles moving on meander shaped rivers. Setup C_Final involves a bridge crane system. 
 
 C.2. How-To : Setup required software
 1. Request a copy of Falcon.m using the link in B2. The support (on all issues) is great and one will be send soon. 
@@ -36,3 +36,6 @@ C.3. How-To : Run provided examples (requires C.2.)
 3. Run file compile.m. This sets the "environment" variable. We installed the necessary compiler files in C:\mingw-w64\x86_64-5.3.0-posix-seh-rt_v4-rev0\mingw64. If a different location was used when installing change accordingly in the compile.m (first line - setenv command).
 4. Run CleanSubOptimal.m so to clean up existing files.
 5. Run main.m and upon completion FinalResults.m.
+
+Update 04/02/2023
+FinalResults.m have been revised so to show the results in the same order as they appear in the assosiated publication
