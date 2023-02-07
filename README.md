@@ -23,7 +23,7 @@ b) Variable SolverStats includes the results from IPOPT for each subproblem solv
 - y is the number of iterations required to solve the subproblem.
 - z is the time required to solve the subproblem. 
 
-NSetup A involves one moving obstacle and time-changing terrain (expanding puddle). TwoObstacles involves two deforming obstacles moving on meander shaped rivers. Setup C_Final involves a bridge crane system. 
+Folder ChangingGeometryAndObstacle involves one moving obstacle and time-changing terrain (expanding puddle). TwoDeformingObstacles involves two deforming obstacles moving on meander shaped rivers. CraneSystem involves a bridge crane system. 
 
 C.2. How-To : Setup required software
 1. Request a copy of Falcon.m using the link in B2. The support (on all issues) is great and one will be send soon. 
@@ -31,12 +31,12 @@ C.2. How-To : Setup required software
 3. There are two additional files needed for the compiler to run smoothly (This process may have changed for versions after 2019b); both are included in the repository. The first is configuremingw.p information for which can be found here https://www.mathworks.com/matlabcentral/answers/313298-i-already-have-mingw-on-my-computer-how-do-i-configure-it-to-work-with-matlab. The second is compile.m needed to set the environment variable properly. Also, depending on the subproblem solved files from here https://www.mathworks.com/matlabcentral/fileexchange/9542-minimum-volume-enclosing-ellipsoid may be used. They are included in every folder.
 
 C.3. How-To : Run provided examples (requires C.2.)
-1. Browse to the folder where Falcon was installed, and unzip the files there. Each experiment should be placed in a different subfolder of the main Falcon folder (the one where you installed Falcon). For example, folder NSetupA should be placed in C:\FALCON.m.v1.24.2002191427\falcon\NSetupA, where FALCON.m.v1.24.2002191427 may need to change depending on the version installed.
+1. Browse to the folder where Falcon was installed, and unzip the files there. Each experiment should be placed in a different subfolder of the main Falcon folder (the one where you installed Falcon). For example, folder CraneSystem should be placed in C:\FALCON.m.v1.24.2002191427\falcon\CraneSystem, where FALCON.m.v1.24.2002191427 may need to change depending on the version installed.
 2. Run file configuremingw.p and select the folder where the compiler was placed. We installed GCC on C:\TDM-GCC-64 and suggest this one is used.
 3. Run file compile.m. This sets the "environment" variable. We installed the necessary compiler files in C:\mingw-w64\x86_64-5.3.0-posix-seh-rt_v4-rev0\mingw64. If a different location was used when installing change accordingly in the compile.m (first line - setenv command).
 4. Run CleanSubOptimal.m so to clean up existing files.
 5. Run main.m and upon completion FinalResults.m.
 
-Update 06/02/2023
+Update 07/02/2023
 
-FinalResults.m have been revised so to show the results in the same order as they appear in the assosiated publication as well as show various additional verifications results in a more compact way.
+FinalResults.m have been revised so that: a) the results are shownin the same order as they appear in the assosiated publication, b) folder names now relate in a more direct way to the experiment, and c) various additional verifications results are shown in a more compact way.
