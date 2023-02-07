@@ -39,4 +39,4 @@ C.3. How-To : Run provided examples (requires C.2.)
 
 Update 07/02/2023
 
-FinalResults.m have been revised so that: a) the results are shownin the same order as they appear in the assosiated publication, b) folder names now relate in a more direct way to the experiment, and c) various additional verifications results are shown in a more compact way.
+FinalResults.m have been revised so that: a) the results are shown in the same order as they appear in the assosiated publication, b) folder names now relate in a more direct way to the experiment, and c) various additional verifications results are shown in a more compact way.
