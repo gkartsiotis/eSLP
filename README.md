@@ -37,6 +37,6 @@ C.3. How-To : Run provided examples (requires C.2.)
 4. Run CleanSubOptimal.m so to clean up existing files.
 5. Run main.m and upon completion FinalResults.m.
 
-Update 07/02/2023
+Update 28/02/2023
 
 FinalResults.m have been revised so that: a) the results are shown in the same order as they appear in the assosiated publication, b) folder names now relate in a more direct way to the experiment, and c) various additional verifications results are shown in a more compact way.
